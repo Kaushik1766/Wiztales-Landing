@@ -44,8 +44,8 @@ function NavButton({ data }: {
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
-                        transition={{ duration: 0.5 }}
-                        className='absolute cursor-auto -bottom-56 left-0 w-full bg-[#080d0c] border h-56 -z-10 flex items-center justify-between gap-10 px-40'>
+                        transition={{ duration: 0.2 }}
+                        className='absolute cursor-auto -bottom-56 left-0 w-full bg-[#080d0c] border h-56 flex items-center justify-between gap-10 px-40 '>
                         {
                             data.content.map((item, idx) => {
                                 return <div key={idx}>

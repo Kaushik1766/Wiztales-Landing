@@ -55,7 +55,7 @@ const tabData = [
 function Navbar() {
     // const [tab, setTab] = useState<string | null>(null)
     return (
-        <div className='w-full sticky top-0 bg-transparent z-40'>
+        <div className='w-full fixed top-0 bg-transparent z-40 '>
             {/* top notification */}
             {/* <motion.div className='h-10 text-white bg-gradient-to-r from-[#22ace9] via-[#3354aa] to-[#8e9acf] flex items-center justify-center gap-4'
                 initial={{ x: '-100vw' }}
@@ -68,7 +68,7 @@ function Navbar() {
 
             {/* navbar */}
             <div className='relative'>
-                <motion.div className='w-full h-24 bg-[#080d0c] bg-opacity-40 backdrop-blur-md flex items-center justify-between px-40 border-b'>
+                <motion.div className='w-full h-24 bg-[#080d0c] bg-opacity-40 backdrop-blur-md flex items-center justify-between px-40 border-b rounded-b-3xl'>
                     <Image src={logo} alt='logo' className='h-4/5 w-auto' />
                     <div className='flex items-center justify-between gap-5 text-white h-full'>
                         {
