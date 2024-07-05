@@ -76,7 +76,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
                 <div className="flex w-full border border-white ">
                     {
                         numbers.map((item, idx) => {
-                            return <div className="border w-1/4 border-white h-40 flex flex-col justify-center items-center gap-2">
+                            return <div key={idx} className="border w-1/4 border-white h-40 flex flex-col justify-center items-center gap-2">
                                 <h2 className="text-6xl font-bold"><NumberTicker delay={0.1} className="" value={item.num} />{item.suffix}</h2>
                                 <p className="text-gray-400 text-lg">{item.text}</p>
                             </div>

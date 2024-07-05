@@ -7,7 +7,7 @@ function BringEventAlive() {
     return (
         <div className='w-4/5 mx-auto flex flex-col gap-5'>
             <h2 className='text-6xl font-bold'>Bringing your event <br /> alive whenever,<br /> wherever.</h2>
-            <p className='text-gray-400 text-lg w-1/2'>Use the world's fastest-growing Event Tech Platform to bring worlds together and create an experience that’s uniquely yours.
+            <p className='text-gray-400 text-lg w-1/2'>Use the world`&apos;`s fastest-growing Event Tech Platform to bring worlds together and create an experience that’s uniquely yours.
             </p>
             <div className='flex w-full items-center'>
                 <CardContainer className="inter-var">
