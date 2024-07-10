@@ -39,17 +39,17 @@ const products = [
 function Products() {
     return (
         <div className='w-full mx-auto flex flex-col my-20 gap-40'>
-            <h2 className='text-center text-5xl font-bold'>Connecting people, one product at a time!</h2>
+            <h2 className='text-center text-4xl lg:text-5xl font-bold'>Connecting people, one product at a time!</h2>
             {
                 products.map((item, idx) => {
-                    return <div className={`flex ${idx % 2 == 0 ? 'flex-row' : 'flex-row-reverse'} w-4/5 gap-20 mx-auto items-center justify-between`} key={idx}>
-                        <div className='w-1/2 flex flex-col gap-8'>
+                    return <div className={`flex flex-col-reverse ${idx % 2 == 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} w-10/12 lg:w-4/5 gap-20 mx-auto items-center justify-between`} key={idx}>
+                        <div className=' w-full lg:w-1/2 flex flex-col gap-8'>
                             <h2 className='text-5xl font-bold'>{item.title}</h2>
                             <p className='text-xl'>{item.content}</p>
                             <div className='flex flex-col w-full gap-2'>
                                 {
                                     item.bullets.map((point, idx) => {
-                                        return <div className='flex flex-col gap-3'>
+                                        return <div key={idx} className='flex flex-col gap-3'>
                                             <div className='flex items-center gap-2' key={idx} >
                                                 <TiTick />
                                                 <p>{point}</p>
@@ -60,7 +60,7 @@ function Products() {
                                 }
                             </div>
                         </div>
-                        <Image width={'1000'} height={'1000'} src={item.image} alt='img' className='w-1/2' />
+                        <Image width={'1000'} height={'1000'} src={item.image} alt='img' className='w-full lg:w-1/2' />
                     </div>
                 })
             }

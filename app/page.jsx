@@ -7,6 +7,10 @@ import PoweringCommunities from "./components/PoweringCommunities";
 import BringEventAlive from "./components/BringEventAlive";
 import { useEffect } from "react";
 import Products from "./components/Products";
+import OurMission from "./components/OurMission";
+import CustomerReviews from "./components/CustomerReviews";
+import News from "./components/News";
+import WiztalesBento from "./components/WiztalesBento";
 
 export default function Home() {
   useEffect(() => {
@@ -26,12 +30,10 @@ export default function Home() {
       <PoweringCommunities />
       <BringEventAlive />
       <Products />
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-      <div className="h-screen"></div>
-
+      <OurMission />
+      <CustomerReviews />
+      <News />
+      <WiztalesBento />
     </div>
   );
 }

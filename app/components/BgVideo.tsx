@@ -19,7 +19,7 @@ function BgVideo() {
         //     // backgroundImage: `url(https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62d10f7b918ba66f20b72479_Home Page Hero-poster-00001.jpg)`
         // }} className="w-screen h-screen -z-10" src=''>
         // </video>
-        <div ref={ref} className='h-screen'>
+        <div ref={ref} className='h-screen mt-5 lg:mt-0'>
             <AnimatePresence>
                 {
                     inView &&
@@ -33,13 +33,13 @@ function BgVideo() {
                         transition={{ duration: 1 }}
                     >
                         <WavyBackground className='wavyBackground' colors={['#f8bb4c', '#b83e90', '#d1672f', '#0fbcff']} waveWidth={80} speed='slow'>
-                            <div className=' flex flex-col items-center justify-center gap-10 mx-auto text-center'>
-                                <div className='text-6xl w-4/5 flex flex-col gap-4 font-bold text-center'>
+                            <div className=' flex flex-col items-center justify-center gap-8 lg:gap-10 mx-auto text-center'>
+                                <div className='text-4xl lg:text-6xl w-11/12 lg:w-4/5 flex flex-col lg:gap-4 font-bold text-center'>
                                     <h1>Connecting Worlds,</h1>
                                     <h1>Connecting People,</h1>
                                     <h1>One event at a time.</h1>
                                 </div>
-                                <p className='text-gray-300 w-3/5'>
+                                <p className='text-gray-300 w-11/12 lg:w-3/5'>
                                     Empowering organizations to create unparalleled experiences for global audiences.
                                     Witness the new era.
                                 </p>

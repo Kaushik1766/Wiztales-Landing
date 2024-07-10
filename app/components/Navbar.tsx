@@ -68,9 +68,9 @@ function Navbar() {
 
             {/* navbar */}
             <div className='relative'>
-                <motion.div className='w-full h-24 bg-[#080d0c] bg-opacity-40 backdrop-blur-md flex items-center justify-between px-40 border-b rounded-b-3xl'>
+                <motion.div className='w-full h-24 bg-[#080d0c] bg-opacity-40 backdrop-blur-md flex items-center justify-between p-2 lg:px-40 border-b rounded-b-3xl'>
                     <Image src={logo} alt='logo' className='h-4/5 w-auto' />
-                    <div className='flex items-center justify-between gap-5 text-white h-full'>
+                    <div className='hidden lg:flex items-center justify-between gap-5 text-white h-full'>
                         {
                             tabData.map((item, idx) => {
                                 return <NavButton key={idx} data={item} />
@@ -79,6 +79,7 @@ function Navbar() {
                         <Link href={'#'}>Blogs</Link>
                         <Button className='bg-[#ee9c2a] hover:bg-[#ffb467] mx-8 scale-125'> Book a Demo</Button>
                     </div>
+                    <Button className='lg:hidden bg-[#ee9c2a] hover:bg-[#ffb467] mx-8 scale-125'> Book a Demo</Button>
                 </motion.div>
             </div>
         </div>

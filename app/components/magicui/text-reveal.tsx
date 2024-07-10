@@ -56,7 +56,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
                     <p
                         ref={targetRef}
                         className={
-                            "flex w-2/5 flex-wrap py-5 text-2xl font-bold text-black/20 dark:text-white/20 md:py-8 md:text-3xl lg:py-10 lg:text-4xl xl:text-5xl"
+                            "flex w-full lg:w-2/5 flex-wrap py-5 text-2xl font-bold text-black/20 dark:text-white/20 md:py-8 md:text-3xl lg:py-10 lg:text-4xl xl:text-5xl"
                         }
                     >
                         {words.map((word, i) => {
@@ -69,15 +69,15 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
                             );
                         })}
                     </p>
-                    <div className="w-2/5 ">
+                    <div className="w-2/5 lg:block hidden">
                         <img className="mx-auto" src="https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62a8a51d5cc9b2f0b358d916_vr.webp" alt="" />
                     </div>
                 </div>
-                <div className="flex w-full border border-white ">
+                <div className="flex flex-col lg:flex-row w-full border border-white mt-10 lg:mt-0">
                     {
                         numbers.map((item, idx) => {
-                            return <div key={idx} className="border w-1/4 border-white h-40 flex flex-col justify-center items-center gap-2">
-                                <h2 className="text-6xl font-bold"><NumberTicker delay={0.1} className="" value={item.num} />{item.suffix}</h2>
+                            return <div key={idx} className="border w-full lg:w-1/4 border-white h-40 flex flex-col justify-center items-center gap-2">
+                                <h2 className="text-4xl lg:text-6xl font-bold"><NumberTicker delay={0.1} className="" value={item.num} />{item.suffix}</h2>
                                 <p className="text-gray-400 text-lg">{item.text}</p>
                             </div>
                         })

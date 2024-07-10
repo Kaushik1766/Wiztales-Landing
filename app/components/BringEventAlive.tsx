@@ -29,15 +29,16 @@ const eventData = [
 
 function BringEventAlive() {
     return (
-        <div className='w-4/5 mx-auto flex flex-col gap-5'>
-            <h2 className='text-6xl font-bold'>Bringing your event <br /> alive whenever,<br /> wherever.</h2>
-            <p className='text-gray-400 text-lg w-1/2'>Use the world&apos;s fastest-growing Event Tech Platform to bring worlds together and create an experience that’s uniquely yours.
+        <div className='w-11/12 lg:w-4/5 mx-auto flex flex-col gap-5'>
+            <h2 className='text-4xl lg:text-6xl font-bold'>Bringing your event <br /> alive whenever,<br /> wherever.</h2>
+            <p className='text-gray-400 text-lg w-11/12 lg:w-1/2'>Use the world&apos;s fastest-growing Event Tech Platform to bring worlds together and create an experience that’s uniquely yours.
+
             </p>
-            <div className='flex w-full mx-auto items-center justify-evenly'>
+            <div className='flex flex-col lg:flex-row w-full mx-auto items-center lg:justify-evenly'>
                 {
                     eventData.map((item, idx) => {
-                        return <CardContainer className="inter-var">
-                            <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.3] border-black/[0.1] w-1/4 sm:w-[18vw] h-auto rounded-xl p-6 border">
+                        return <CardContainer className="inter-var" key={idx}>
+                            <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.3] border-black/[0.1] lg:w-[18vw] h-auto rounded-xl p-6 border">
                                 <CardItem
                                     translateZ="50"
                                     className="text-xl font-bold text-neutral-600 dark:text-white"
