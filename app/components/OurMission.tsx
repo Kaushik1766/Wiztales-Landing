@@ -51,7 +51,7 @@ function OurMission() {
                                         {item.content}
                                     </p>
                                     <p className='font-bold text-sm'>Read Case Study</p>
-                                    <div className='flex w-full text-sm font-bold text-gray-300 justify-between'>
+                                    <div className='flex w-full text-sm font-bold text-gray-300 justify-between  flex-wrap gap-5 md:gap-0 '>
                                         <div className='w-1/4 '>
                                             <p className='text-2xl'>{item.sessionViews}</p>
                                             <p>Session Views</p>
