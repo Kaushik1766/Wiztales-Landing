@@ -15,7 +15,7 @@ function PoweringCommunities() {
                     <img src="https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62a8a51d5cc9b2f0b358d916_vr.webp" alt="" />
                 </div> */}
             </div>
-            <div className='h-[100vh]'>
+            <div className='h-[120vh] md:h-[100vh]'>
 
             </div>
         </div>
