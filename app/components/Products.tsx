@@ -15,24 +15,26 @@ const products = [
         image: 'https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62c517b1a77cfea412221d93_Group%2048095728.webp'
     },
     {
-        title: 'Wiz365',
-        content: 'An all-in-one virtual event platform guaranteed to take you on an adventure as you experience the grandeur of Virtual and Hybrid events across the globe.',
+        title: 'Wizit',
+        content: 'An in-person experience app to extend the reach of your event make unique experiences for your audiences.',
         bullets: [
-            'Create immersive 3D and 360-degree platforms with mesmerizing designs.',
-            'Host powerful expos with unlimited stalls, calendar integration, and AR product displays.',
-            'Gain real-time insights, analytics, and feedback about your event.'
-        ],
-        image: 'https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62c517b1a77cfea412221d93_Group%2048095728.webp'
+            "A fully customizable and device agnostic application to access events on-the-go.",
+            "AI based networking for enhanced and intelligent networking solutions.",
+            "Live Stream Sessions and access On-Demand Videos anytime, anywhere."
+        ]
+        ,
+        image: 'https://cdn.prod.website-files.com/62947d7436f7afbdfa49f716/62d2e2013127033caf031af0_Wizit%20homepage-p-800.webp'
     },
     {
-        title: 'Wiz365',
-        content: 'An all-in-one virtual event platform guaranteed to take you on an adventure as you experience the grandeur of Virtual and Hybrid events across the globe.',
+        title: 'Altyug',
+        content: 'A metaverse platform designed to create moments that are tailor made for you, with stunning, realistic design and boundless communication.',
         bullets: [
-            'Create immersive 3D and 360-degree platforms with mesmerizing designs.',
-            'Host powerful expos with unlimited stalls, calendar integration, and AR product displays.',
-            'Gain real-time insights, analytics, and feedback about your event.'
-        ],
-        image: 'https://assets-global.website-files.com/62947d7436f7afbdfa49f716/62c517b1a77cfea412221d93_Group%2048095728.webp'
+            "Create life size fully customizable Digital Twin Avatars.",
+            "Customize Realistic and Futuristic Venues with multiple points of interaction.",
+            "Stream live and pre-recorded events with custom avatar gestures."
+        ]
+        ,
+        image: 'https://cdn.prod.website-files.com/62947d7436f7afbdfa49f716/62c517b9fe06ca71148ef3c7_Group%2048095730.png'
     },
 ]
 
